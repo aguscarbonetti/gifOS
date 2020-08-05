@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gif.OS</title>
+    <link rel="stylesheet" type="text/css" href="./estilos/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <div class="welcome gradient">
+        <p>¡Bienvenides a Gifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </div>
+
+    <div class="contenedor">
+        <header>
+            <div class="first-line">
+                <a class="logo-href" href="index.html"><img src="./assets/gifOF_logo.png" class="logo" alt="gif.os logo"></a>
+                <div class="button-nav">
+                    <button type="button" class="top-button first-button dotted-anchor"><a href="./createGifs.html" target="_blanket">Crear Gifos</a></button>
+                    <div class="theme-selector">
+                        <div class="drop-button dotted" id="dropdownBtn">
+                            <button type="button" class="top-button dropdown"><span>Elegir tema</span></button>
+                            <button type="button" class="top-button dropdown-arrow"><span"><img class="invert" src="./assets/dropdown.svg"
+                                    alt="Icono para abrir listado de temas"></span></button>
+                        </div>
+                        <div class="dropdown-container hidden" id="menuToShow">
+                            <ul class="dropdown-menu">
+                                <li id="sailor-day"><span class="underlined">S</span>aylor Day</li>
+                                <li id="sailor-night">Saylor Night</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="my-gifs-cont dotted-anchor"><a href="./misgifos.html"><p class="my-gifs"><span class="underline">M</span>is Gifos</p></a></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="second-line">
+            <div class="search">
+                <div class="search-title gradient">
+                    <p>Buscar</p>
+                </div>
+                <div class="search-space">
+                    <input type="text" id="gif-searcher" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                    <button type="submit" id="search-button" class="search-lens dotted-anchor">
+                    <img id= "lupita" src="./assets/lupa_light.svg" alt="Lupa" class="lupa">
+                    Buscar
+                </button>
+                </div>  
+                <div class="autocomplete hidden" id="autocomplete-recom">
+                </div>
+            </div>
+        </section>
+        <section id="hidden-search">
+            <div class="other-searcher">Resultados:</div>
+            <div id="search-results" class="trend-grid"></div>
+            <div id="search-more-results" class="show-me-more">Ver más...</div>
+        </section>
+        <section class="third-line">
+            <div class="other-searcher">Hoy te sugerimos:</div>
+            <div id="suggestedCont" class="trend-grid"></div>
+        </section>
+        <section class="fourth-line">
+            <div class="other-searcher">Tendencias:</div>
+            <div id="trendingCont" class="trend-grid"></div>
+        </section>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

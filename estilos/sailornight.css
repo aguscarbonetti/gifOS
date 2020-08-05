@@ -1,0 +1,172 @@
+body {
+  background-color: #110038;
+}
+
+.gradient {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.gif-title {
+  color: #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.intern-container {
+  -webkit-box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.botton-see-more {
+  background: #2E32FB;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.botton-see-more a {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-size: "Chakra Petch", sans-serif;
+}
+
+header img.logo {
+  content: url(/assets/gifOF_logo_dark.png);
+}
+
+header .top-button {
+  background-color: #EE3EFE;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.my-gifs {
+  color: #FFFFFF;
+}
+
+.first-button a {
+  color: #FFFFFF;
+}
+
+.first-button a:hover {
+  color: #FFFFFF;
+}
+
+.first-button a:active {
+  color: #FFFFFF;
+}
+
+.first-button a:visited {
+  color: #FFFFFF;
+}
+
+.dropdown-container {
+  background-color: #B4B4B4;
+}
+
+.dropdown-container .dropdown-menu li {
+  background-color: #CCCCCC;
+}
+
+.dropdown-container .dropdown-menu li:hover {
+  background-color: #2E32FB;
+  border: 1px solid rgba(51, 53, 143, 0.2);
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0;
+}
+
+.top-button {
+  color: #FFFFFF;
+}
+
+.top-button:hover {
+  background-color: #CE36DB;
+}
+
+.invert {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.dotted:hover {
+  cursor: pointer;
+}
+
+.dotted:hover .dropdown {
+  background-color: #CE36DB;
+}
+
+.dotted:hover .dropdown-arrow {
+  background-color: #CE36DB;
+}
+
+.search .search-title {
+  -webkit-box-shadow: inset -2px 0px 0 0 #8F8F8F, inset 2px 0px 0 0 #FFFFFF;
+          box-shadow: inset -2px 0px 0 0 #8F8F8F, inset 2px 0px 0 0 #FFFFFF;
+}
+
+.search .search-space {
+  background-color: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 0px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 0px 0 0 #FFFFFF;
+}
+
+.search-lens {
+  color: 8F8F8F;
+}
+
+.search-lens:hover {
+  background-color: #CE36DB;
+}
+
+.other-searcher {
+  border: 1px solid #2E32FB;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+}
+
+.color-changer {
+  background: #EE3EFE;
+  color: #FFFFFF;
+}
+
+.color-changer .lupa {
+  -webkit-filter: invert(0%);
+          filter: invert(0%);
+}
+
+.autocomplete {
+  background-color: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+}
+
+.show-me-more {
+  background-color: #EE3EFE;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.show-me-more:hover {
+  background-color: #CE36DB;
+}
+
+.how-to-create {
+  background-color: #B4B4B4;
+}
+
+.create-cancel {
+  background-color: #FFF4FD;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.create-start {
+  background-color: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+/*# sourceMappingURL=sailornight.css.map */

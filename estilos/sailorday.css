@@ -1,0 +1,191 @@
+body {
+  background-color: #fff4fd;
+}
+
+.gradient {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+
+.gif-title {
+  color: #FFFFFF;
+}
+
+.intern-container {
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.botton-see-more {
+  background: #4180F6;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.botton-see-more a {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-size: "Chakra Petch", sans-serif;
+}
+
+header .top-button {
+  background-color: #F7C9F3;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+header img.logo {
+  content: url(/assets/gifOF_logo.png);
+}
+
+.my-gifs {
+  color: #110038;
+}
+
+.my-gifs .underline {
+  text-decoration: underline;
+}
+
+.first-button a {
+  color: #110038;
+}
+
+.first-button a:hover {
+  color: #110038;
+}
+
+.first-button a:active {
+  color: #110038;
+}
+
+.first-button a:visited {
+  color: #110038;
+}
+
+.dropdown-container {
+  background-color: #e7e7e7;
+}
+
+.dropdown-container .dropdown-menu li {
+  background-color: #F0F0F0;
+}
+
+.dropdown-container .dropdown-menu li:hover {
+  background-color: #FFF4FD;
+  border: 1px solid #CCA6C9;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.top-button {
+  color: #110038;
+}
+
+.top-button:hover {
+  background-color: #e6bbe2;
+}
+
+.dotted:hover {
+  cursor: pointer;
+}
+
+.dotted:hover .dropdown {
+  background-color: #e6bbe2;
+}
+
+.dotted:hover .dropdown-arrow {
+  background-color: #e6bbe2;
+}
+
+.invert {
+  -webkit-filter: invert(0%);
+          filter: invert(0%);
+}
+
+.second-line .search-title {
+  -webkit-box-shadow: inset -2px 0px 0 0 #B4B4B4, inset 2px 0px 0 0 #FFFFFF;
+          box-shadow: inset -2px 0px 0 0 #B4B4B4, inset 2px 0px 0 0 #FFFFFF;
+}
+
+.second-line .search-space {
+  background-color: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 0px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 0px 0 0 #FFFFFF;
+}
+
+.search-lens {
+  color: #B4B4B4;
+}
+
+.show-me-more {
+  background-color: #F7C9F3;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.show-me-more:hover {
+  background-color: #e6bbe2;
+}
+
+.other-searcher {
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+.autocomplete {
+  background-color: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.autocomplete .suggested {
+  background: #F0F0F0;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.autocomplete .suggested:hover {
+  background-color: #dbdbdb;
+}
+
+.color-changer {
+  background: #F7C9F3;
+  color: #110038;
+}
+
+.color-changer .lupa {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.how-to-create {
+  background-color: #E6E6E6;
+}
+
+.create-cancel {
+  background-color: #FFF4FD;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.create-title {
+  color: #FFFFFF;
+}
+
+.create-start {
+  background-color: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.cont-svg {
+  background-color: #F7C9F3;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+/*# sourceMappingURL=sailorday.css.map */
