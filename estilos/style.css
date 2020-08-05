@@ -856,7 +856,7 @@ header .top-button {
 }
 
 header img.logo {
-  content: url(/assets/gifOF_logo.png);
+  content: url(../assets/gifOF_logo.png);
 }
 
 .my-gifs {
