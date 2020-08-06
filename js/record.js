@@ -79,7 +79,6 @@ async function getMedia(constraints) {
                     fetch(`https://upload.giphy.com/v1/gifs?api_key=${apiKey}`, {method: "POST", body: form})
                     .then(response => response.json())
                     .then(response =>{
-                        console.log(response);
                         let myGifs;
                         let newID = response.data.id;
                         if (localStorage.getItem("misGifos") === null) {
@@ -157,7 +156,6 @@ async function showCreatedGifs() {
             const data = fetch(urlID) 
             .then(response => response.json())
             .then(data =>{
-                console.log(data);
                 const internContainer = document.createElement('div');
                 internContainer.classList.add('my-gifs-container');
                 const gif = document.createElement('img');

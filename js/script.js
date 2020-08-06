@@ -63,7 +63,6 @@ try{
   const data = fetch(urlAutocomplete)
   .then(response => response.json())
   .then(data =>{
-    console.log(data.data)
     while (contenedor.lastElementChild) {
       contenedor.removeChild(contenedor.lastElementChild);
     };
@@ -73,7 +72,6 @@ try{
       internContainer.classList.add('suggested');
       internContainer.addEventListener('click', (e)=>{
         searchContent.value = e.target.innerHTML;
-        console.log(e.target);
       });
       const suggestions = document.createElement('p');
       suggestions.innerHTML = element.name;
@@ -96,6 +94,13 @@ let valueContent;
 gifSearcher.addEventListener("click", () =>{
   limit = 20;
   valueContent = searchContent.value;
+  //chequear numerales
+  if(valueContent.charAt(0) === '#')
+  {
+    valueContent= valueContent.substr(1);
+  }
+  valueContent = encodeURIComponent(valueContent);
+
   if (valueContent.length == 0){
     searchContent.setAttribute('placeholder', "Ooops, la búsqueda no ha arrojado resultados. Intentalo de nuevo.")
     document.getElementById('hidden-search').style.display = "none";
@@ -113,7 +118,7 @@ gifSearcher.addEventListener("click", () =>{
     const data = fetch(urlSearch)
     .then(response => response.json())
     .then(data =>{
-      console.log(data.data)
+      
       data.data.forEach(element=>{
         const internContainer = document.createElement('div');
         internContainer.classList.add('intern-container');
@@ -135,6 +140,38 @@ gifSearcher.addEventListener("click", () =>{
 catch(error){
   console.log(error)
 }
+
+try{
+  let urlSuggestedTags = `https://api.giphy.com/v1/tags/related/${valueContent}?api_key=${apiKey}&limit=3`;
+  console.log(urlSuggestedTags);
+  const tagsDivs = document.getElementById("suggestion-tags");
+
+  const dataTags = fetch(urlSuggestedTags)
+  .then(response => response.json())
+  .then(dataTags =>{
+    while (tagsDivs.lastElementChild) {
+      tagsDivs.removeChild(tagsDivs.lastElementChild);
+    };
+
+    dataTags.data.forEach(element=>{
+      const containerTags = document.createElement('div');
+      containerTags.classList.add('suggested-tags');
+      tagsDivs.appendChild(containerTags);
+      const pSuggested = document.createElement('p');
+      containerTags.appendChild(pSuggested);
+      pSuggested.innerHTML = `#${element.name}`;
+
+      pSuggested.addEventListener('click', (e)=>{
+      document.getElementById("gif-searcher").value = e.target.innerHTML;
+      });
+
+    })
+  })
+
+}
+catch(error){
+  console.log(error)
+}
 });
 
 const loadMoreGifs = document.getElementById('search-more-results');
@@ -145,7 +182,6 @@ loadMoreGifs.addEventListener('click', ()=>{
     const data = fetch(urlSearch)
     .then(response => response.json())
     .then(data =>{
-      console.log(data.data)
       data.data.forEach(element=>{
         const internContainer = document.createElement('div');
         internContainer.classList.add('intern-container');
@@ -179,7 +215,6 @@ async function getSuggestedGifs(suggestion) {
       const data = await fetch(urlSuggested)
       .then(response => response.json())
       .then(data =>{
-        console.log(data.data)
         data.data.forEach(element=>{
           const internContainer = document.createElement('div');
           internContainer.classList.add('intern-container');
@@ -232,7 +267,6 @@ getSuggestedGifs();
       const data = await fetch(urlTrending)
       .then(response => response.json())
       .then(data =>{
-        console.log(data);
         data.data.forEach(element => {
                  // crear contenedor y darle estilo
           const internContainer = document.createElement('div');

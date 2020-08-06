@@ -328,6 +328,28 @@ header .first-line .button-nav .top-button {
   display: none;
 }
 
+.cont-tags {
+  margin-left: 6.9%;
+}
+
+.suggested-tags {
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  height: 2.25rem;
+  background-color: #4180F6;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+  font-family: "Chakra Petch", sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.suggested-tags p {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
 .other-searcher {
   margin-top: 4rem;
   margin-left: 6.9%;
