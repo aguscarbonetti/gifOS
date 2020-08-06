@@ -104,6 +104,7 @@ gifSearcher.addEventListener("click", () =>{
   let urlSearch = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${valueContent}&limit=${limit}&offset=${offsetSearch}&rating=g&lang=en`;
   document.getElementById('hidden-search').style.display = "block";
   document.getElementById('search-button').classList.add("change-color");
+  document.getElementById('results-p').innerHTML = `${valueContent} (resultados)`;
   const contenedor = document.getElementById("search-results");
   while (contenedor.lastElementChild) {
     contenedor.removeChild(contenedor.lastElementChild);

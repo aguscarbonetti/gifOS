@@ -370,6 +370,7 @@ header .first-line .button-nav .top-button {
   margin-left: 7%;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 14px;
   grid-auto-flow: dense;
@@ -564,6 +565,7 @@ h3 {
 .create-cancel {
   margin-left: 20rem;
   color: black;
+  padding-top: 0.5rem;
 }
 
 .create-cancel a:link {
